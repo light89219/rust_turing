@@ -1,0 +1,8 @@
+.cursor
+target/
+**/target/
+target*/
+**/target*/
+.env
+**/.env
+!.env.example
