@@ -1,0 +1,5 @@
+# Default `target/` lives next to the crate; on some Windows setups E:\ denies
+# creating it (error 5) or AV locks files there (error 32). This puts artifacts
+# on C:\ instead. Change the path if you prefer (e.g. a folder under %LOCALAPPDATA%).
+[build]
+target-dir = "C:/rust-build/day11_api"
