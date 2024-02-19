@@ -1,0 +1,22 @@
+[package]
+name = "day12_api"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.8", features = ["macros"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+tower = { version = "0.5", features = ["util"] }
+tower-http = { version = "0.6", features = ["trace", "request-id"] }
+tower_governor = { version = "0.8", features = ["axum"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+utoipa = { version = "5.5", features = ["uuid", "axum_extras"] }
+utoipa-swagger-ui = { version = "9", features = ["axum"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+
+[dev-dependencies]
+http-body-util = "0.1"
+reqwest = { version = "0.12", features = ["json"] }
